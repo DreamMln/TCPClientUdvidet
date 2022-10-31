@@ -28,10 +28,6 @@ namespace TcpClient29aug
             //skriv stream
             StreamWriter writer = new StreamWriter(ns);
 
-            //objekt oprettes
-            //DiceResult Dice = new DiceResult(5, "Lone");
-            //seralisere obj.
-            //string messageSerializeDice = JsonSerializer.Serialize(Dice);
 
             //slut client - skriver i console
             string messageReadline = Console.ReadLine();
@@ -42,7 +38,6 @@ namespace TcpClient29aug
         
                 //det modtages som en string
                     string replyFromServer = reader.ReadLine();
-
                     Console.WriteLine("Server sent this reply: " + replyFromServer);
 
         }
